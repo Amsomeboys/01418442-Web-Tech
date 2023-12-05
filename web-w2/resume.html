@@ -6,7 +6,7 @@
 		<title>Resume</title>
 		<style type="text/css">
 			body {
-				min-height: 100vh;
+				max-height: fit-content;
 				background-color: #221f2f;
 			}
 			body::after {
@@ -28,6 +28,16 @@
 				left: 10%;
 				top: 80%;
 				filter: blur(90px);
+			}
+			::-webkit-scrollbar {
+				-webkit-appearance: none;
+				width: 8px;
+			}
+
+			::-webkit-scrollbar-thumb {
+				border-radius: 4px;
+				background-color: #79005f;
+				box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 			}
 			.grid_container {
 				display: grid;
@@ -55,9 +65,8 @@
 				overflow-y: scroll;
 			}
 			.image {
-				border-radius: 100px;
-				width: 130px;
-				height: 135px;
+				border-radius: 14px;
+				width: 120px;
 				position: absolute;
 				top: 12%;
 				left: 183px;
@@ -69,6 +78,7 @@
 				font-family: Georgia, serif;
 				font-size: 24px;
 				font-weight: bold;
+				color: #a0007d;
 			}
 			.jobtitle {
 				justify-content: center;
