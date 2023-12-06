@@ -51,7 +51,7 @@
 				width: 335px;
 				left: 80px;
 				top: 20%;
-				height: 400px;
+				height: 450px;
 			}
 			.infodetail {
 				position: absolute;
@@ -64,15 +64,28 @@
 				height: 400px;
 				overflow-y: scroll;
 			}
-			.image {
-				border-radius: 14px;
-				width: 120px;
+			.image_profile {
+				border-radius: 80px;
+				border-width: 2px;
+				width: 150px;
+				height: 150px;
 				position: absolute;
 				top: 12%;
-				left: 183px;
+				left: 170px;
 				z-index: 1;
 				display: flex;
 				justify-content: center;
+			}
+			.image_list {
+				border-radius: 80px;
+				border-width: 2px;
+				width: 110px;
+				height: 110px;
+			}
+			.image_list:hover {
+				box-shadow: 0 8px 20px 8px #9a007946;
+				transition: transform 0.3s ease-in-out;
+				transform: scale(1.2);
 			}
 			.title {
 				font-family: Georgia, serif;
@@ -96,7 +109,7 @@
 				background-color: #f1efef;
 				margin-top: 30px;
 				padding: 48px 30px 10px 30px;
-				height: 233px;
+				height: 280px;
 			}
 			.sub_title {
 				font-family: Georgia, serif;
@@ -152,7 +165,7 @@
 	<body>
 		<div class="grid_container">
 			<div style="display: flex; justify-content: center">
-				<img class="image" src="./src/jirapat.JPG" />
+				<img class="image_profile" src="./src/jirapat.JPG" />
 
 				<div class="infobox">
 					<div>
@@ -208,7 +221,23 @@
 								"
 							>
 								<img src="./src/smartphone.png" width="42px" />
-								<div>+66 80-459-7111</div>
+								<a href="tel:+66 80-459-7111" style="color: #470066"
+									>+66 80-459-7111</a
+								>
+							</div>
+							<div
+								style="
+									display: flex;
+									margin-left: 22px;
+									align-items: center;
+									gap: 17px;
+									margin-top: 20px;
+								"
+							>
+								<img src="./src/github-mark.png" width="32px" />
+								<a href="https://github.com/Amsomeboys" target="_blank"
+									>Amsomeboys</a
+								>
 							</div>
 						</div>
 					</div>
@@ -343,16 +372,25 @@
 						Best friends
 					</ul>
 					<br />
-					<div style="margin-left: 20px">
-						<li class="body"></li>
-						<br />
-						<li class="body"></li>
-						<br />
-						<li class="body"></li>
-						<br />
-						<li class="body"></li>
-						<br />
-						<li class="body"></li>
+					<div style="display: flex; justify-content: space-around">
+						<a
+							href="https://www.facebook.com/profile.php?id=100004547642492"
+							target="_blank"
+							><img
+								class="image_list image-container"
+								src="./src//korn.png"
+								alt="Pongsakorn"
+						/></a>
+
+						<a href="https://www.instagram.com/namesangjun_/" target="_blank">
+							<img class="image_list" src="./src//name.png" alt="Pasin"
+						/></a>
+						<a href="https://www.instagram.com/13az1l1z/" target="_blank"
+							><img class="image_list" src="./src//ball.png" alt="Jinnawat"
+						/></a>
+						<a href="https://www.instagram.com/kst.yothin/" target="_blank"
+							><img class="image_list" src="./src//earth.png" alt="Yothin"
+						/></a>
 					</div>
 				</div>
 				<br />
