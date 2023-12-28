@@ -4,3 +4,12 @@
 [submodule "web-w2"]
 	path = web-w2
 	url = https://github.com/Amsomeboys/web-w2.git
+[submodule "web-w3"]
+	path = web-w3
+	url = https://github.com/Amsomeboys/web-w3.git
+[submodule "web-w4"]
+	path = web-w4
+	url = https://github.com/Amsomeboys/web-w4.git
+[submodule "web-w5"]
+	path = web-w5
+	url = https://github.com/Amsomeboys/web-w5.git
